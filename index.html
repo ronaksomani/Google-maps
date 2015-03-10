@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Get Directions</title>
+		<link type="text/css" href="css/styles.css" rel="stylesheet"></link>
+		<script  src="js/yui2/yahoo-min.js"></script>
+		<script  src="js/yui2/dom-min.js"></script>
+		<script  src="js/yui2/event-min.js"></script>
+	</head>
+	<body>
+	    <div id="sideBar">
+			<div class="row">
+				<label>Your Location:</label>
+				<span id="srcLocation">  </span>
+			</div>
+			<div class="row">
+				<label for="inputDestination">Destination</label>
+				<input type="text" id="inputDestination"/>
+			</div>
+			<button id="btn">Get Direction</button>
+
+			<div id="listDestination" class="hide">
+				<span> Did you mean ? </span>
+				<ul id="listOptions">
+							
+				 </ul>
+			</div>
+	    </div>
+		<div id="main">
+			<div id="infoText" class="hide"></div>
+			<div id="mapContainer"></div>	
+		</div>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script src="js/custom/customScript.js"></script>
+	</body>
+</html>
+
